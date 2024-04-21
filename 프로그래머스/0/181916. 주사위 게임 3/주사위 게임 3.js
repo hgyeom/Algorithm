@@ -69,8 +69,7 @@ function solution(a, b, c, d) {
         }
          else { // Case 2-2: 세 개가 같고 하나가 다를 때
             const [same, diff] = val1 === 3 ? [key1, key2] : [key2, key1];
-            const score = Math.pow(10 * same + Number(diff), 2);
-            return score;
+            return Math.pow(10 * same + Number(diff), 2);
         }
     } 
     
